@@ -16,8 +16,8 @@ public :
 
 
 private : 
-    int fixed;
-    const static int bits = 8;
+    int _nb;
+    const static int _bits = 8;
 };
 
 #endif
