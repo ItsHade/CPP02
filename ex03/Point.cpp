@@ -1,5 +1,6 @@
 #include "Point.hpp"
 
+
 Point::Point(void): _x(0), _y(0)
 {
     return ;
@@ -20,18 +21,20 @@ Point::~Point(void)
     return ;
 }
 
+// x and y are const so you can't really use this:
+// _x = rhs._x;
+// _y 
 Point & Point::operator =(Point const & rhs)
 {
-    this->_x = rhs._x;
-    this->_y = rhs._y;
+    return (*this);
 }
 
-Fixed const Point::getX(void) const
+Fixed const & Point::getX(void) const
 {
     return (_x);
 }
 
-Fixed const Point::getY(void) const
+Fixed const & Point::getY(void) const
 {
     return (_y);
 }

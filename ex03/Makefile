@@ -1,8 +1,8 @@
-SRC = main.cpp Fixed.cpp
+SRC = main.cpp Fixed.cpp Point.cpp bsp.cpp
 
 OBJ = ${SRC:.cpp=.o}
 
-NAME = fixed
+NAME = bsp
 
 CC = c++
 
